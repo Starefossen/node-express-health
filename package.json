@@ -1,0 +1,64 @@
+{
+  "name": "@starefossen/express-health",
+  "version": null,
+  "description": "Health checking route for Express.js applications",
+  "main": "index.js",
+  "files": [
+    "examples",
+    "index.js",
+    "test.js"
+  ],
+  "scripts": {
+    "codacy-coverage": "codacy-coverage",
+    "cover": "istanbul cover --report lcovonly ./node_modules/.bin/_mocha -- test.js",
+    "lint": "eslint index.js test.js examples/",
+    "nsp": "nsp check",
+    "semantic-release": "semantic-release",
+    "start": "supervisor index.js",
+    "test": "mocha -b -c --check-leaks -R tap test.js",
+    "test:watch": "mocha -w -b -c --check-leaks -R progress test.js",
+    "greenkeeper-postpublish": "greenkeeper-postpublish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Starefossen/node-express-health.git"
+  },
+  "keywords": [
+    "ES6",
+    "health",
+    "check",
+    "express",
+    "route"
+  ],
+  "author": "Hans Kristian Flaatten <hans@starefossen.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Starefossen/node-express-health/issues"
+  },
+  "homepage": "https://github.com/Starefossen/node-express-health#readme",
+  "dependencies": {
+    "async-each-map": "^1.0.2"
+  },
+  "peerDependencies": {
+    "@starefossen/http-error": "^1.0.0",
+    "express": "^4.0.0"
+  },
+  "devDependencies": {
+    "@starefossen/http-error": "^1.0.0",
+    "codacy-coverage": "^1.1.3",
+    "eslint": "^2.11.0",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "express": "^4.13.4",
+    "greenkeeper-postpublish": "^1.0.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.5.3",
+    "nsp": "^2.4.0",
+    "semantic-release": "^4.3.5",
+    "supertest": "^1.2.0",
+    "supervisor": "^0.10.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
