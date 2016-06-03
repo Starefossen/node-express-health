@@ -1,0 +1,18 @@
+# vi:syntax=json
+{
+    "extends": "airbnb-base",
+    "env": {
+      "mocha": true,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "script",
+      "ecmaFeatures": {
+        "modules": false
+      }
+    },
+    "rules": {
+      "strict": [2, "global"]
+    }
+}
