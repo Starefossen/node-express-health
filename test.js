@@ -1,8 +1,5 @@
 'use strict';
 
-process.env.CORS_ALLOW_ORIGINS = 'foo.com,bar.com';
-
-const assert = require('assert');
 const request = require('supertest');
 const simpleApp = request(require('./examples/server'));
 
@@ -15,10 +12,10 @@ describe('examples', () => {
           code: 200,
           message: 'Ok',
           services: [{
-            name: "my service",
-            status: "Service Ok"
-          }]
-        }, done)
+            name: 'my service',
+            status: 'Service Ok',
+          }],
+        }, done);
     });
 
     it('multiple checks', done => {
@@ -28,13 +25,13 @@ describe('examples', () => {
           code: 200,
           message: 'Ok',
           services: [{
-            name: "db",
-            status: "Database Ok"
+            name: 'db',
+            status: 'Database Ok',
           }, {
-            name: "cache",
-            status: "Cache Ok"
-          }]
-        }, done)
+            name: 'cache',
+            status: 'Cache Ok',
+          }],
+        }, done);
     });
 
     it('health check error', done => {
@@ -42,8 +39,8 @@ describe('examples', () => {
         .expect(500)
         .expect({
           code: 500,
-          message: 'Service "cache" returned error'
-        }, done)
+          message: 'Service "cache" returned error',
+        }, done);
     });
   });
 });

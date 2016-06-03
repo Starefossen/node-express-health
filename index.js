@@ -38,7 +38,7 @@ module.exports = checks => {
           res.json({
             code: 200,
             message: 'Ok',
-            services: results
+            services: results,
           });
         }
       }
