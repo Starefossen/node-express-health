@@ -1,9 +1,9 @@
 'use strict';
 
 const express = require('express');
-const app = module.exports = express();
-
 const healthCheck = require('../');
+
+const app = module.exports = express();
 
 // normal route
 app.get('/', (req, res) => {
