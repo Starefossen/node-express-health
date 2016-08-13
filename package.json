@@ -44,7 +44,7 @@
     "express": "^4.0.0"
   },
   "devDependencies": {
-    "@starefossen/http-error": "^1.0.0",
+    "@starefossen/http-error": "^1.0.1",
     "codacy-coverage": "^2.0.0",
     "eslint": "^3.3.0",
     "eslint-config-airbnb-base": "^5.0.2",
