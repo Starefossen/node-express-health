@@ -52,7 +52,7 @@
     "express": "^4.13.4",
     "greenkeeper-postpublish": "^1.0.0",
     "istanbul": "^0.4.3",
-    "mocha": "^3.0.0",
+    "mocha": "^3.4.0",
     "nsp": "^2.4.0",
     "semantic-release": "^4.3.5",
     "supertest": "^2.0.0",
